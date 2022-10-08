@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:  hsl(210, 46%, 95%);
+
+    font-family: "Barlow Semi Condensed";
+}
+
+
+.testimonies {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 2fr 2fr;
+
+    padding: 20px;
+
+    grid-gap: 20px;
+
+    cursor: pointer;
+}
+
+.daniel {
+    background: hsl(263, 55%, 52%);
+
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 20px;
+}
+
+.jonathan {
+    background: hsl(217, 19%, 35%);
+}
+
+.jeanette {
+    background: hsl(0, 0%, 100%);
+}
+
+.jeanette p {
+    color: hsl(217, 19%, 35%);
+    opacity: 70%;
+}
+
+.patrick {
+    background: hsl(219, 29%, 14%);
+}
+
+.kira {
+    background: hsl(0, 0%, 100%);
+}
+
+.kira p {
+    color: hsl(217, 19%, 35%);
+    opacity: 70%;
+}
+
+
+.jeanette h1,.jeanette h2,.kira h1,.kira h2 {
+    color: hsl(217, 19%, 35%);
+}
+
+p {
+    font-size: 13px;
+
+
+    padding: 10px 0;
+
+    color:   hsl(0, 0%, 81%);
+    opacity: 70%;
+}
+
+h1{
+    font-size: 1.2rem;
+  
+    color: hsl(0, 0%, 100%);
+
+    padding: 10px 0;
+}
+
+h2 {
+    font-size: 18px;
+
+    color: hsl(0, 0%, 100%);
+}
+
+h3 {
+    font-size: 14px;
+
+    color: hsl(0, 0%, 81%);
+}
+
+.testimonies > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
+    box-shadow: 12px 12px 12px hsl(0, 0%, 81%);
+
+    border-radius: 8px;
+    padding: 20px 30px;
+}
+
+.contentinfo {
+    display: flex;
+
+    gap: 25px;
+}
+
+img {
+    width: 35px;
+    height: 35px;
+    
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+
+    body  {
+        display: grid;
+
+        height: 100vh;
+        
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+    }
+
+    .testimonies  {
+
+        padding: 100px;
+        height: 100vh;
+
+        justify-content: center;
+        align-content: center;
+        grid-template-rows: 1fr 1fr ;
+        grid-gap: 30px;
+
+        border-radius: 8px;
+    }
+
+    .testimonies > div {
+        
+        padding: 10px;
+        justify-content: flex-start;
+
+    } 
+
+    .testimonies > div p{
+        line-height: 20px;
+    }
+
+    .testimonies > div h1 {
+        line-height: 25px;
+    }
+
+    .daniel {
+        background-position: top right 90px;
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .jonathan {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .jeanette {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .patrick {
+        grid-area: 2 / 2 / 3 / 4;
+    }
+
+    .kira {
+        width: 80%;
+        grid-area: 1 / 4 / 3 / 5;
+    }
+    
+}
+
